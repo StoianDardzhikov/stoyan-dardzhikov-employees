@@ -37,7 +37,7 @@ public class EmployeeRelation {
 
     @Override
     public int hashCode() {
-        return firstEmployeeId * 10000 + secondEmployeeId;
+        return firstEmployeeId * secondEmployeeId + firstEmployeeId + secondEmployeeId;
     }
 
     public String toString() {
