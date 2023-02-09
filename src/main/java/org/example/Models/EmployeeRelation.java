@@ -39,15 +39,4 @@ public class EmployeeRelation {
     public int hashCode() {
         return firstEmployeeId * secondEmployeeId + firstEmployeeId + secondEmployeeId;
     }
-
-    public String toString() {
-        StringBuilder stringBuilder = new StringBuilder();
-        for (Map.Entry<Integer, Long> projectWorkDaysEntry : projectWorkedDays.entrySet()) {
-            int projectId = projectWorkDaysEntry.getKey();
-            long days = projectWorkDaysEntry.getValue();
-            stringBuilder.append(firstEmployeeId).append(", ").append(secondEmployeeId).append(", ").append(projectId).append(", ").append(days).append("\n");
-        }
-        stringBuilder.deleteCharAt(stringBuilder.length() - 1);
-        return stringBuilder.toString();
-    }
 }

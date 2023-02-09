@@ -22,12 +22,4 @@ public class CompositeKey {
     public int hashCode() {
         return id1 * id2 + id1 + id2;
     }
-
-    @Override
-    public String toString() {
-        return "CompositeKey{" +
-                "id1=" + id1 +
-                ", id2=" + id2 +
-                '}';
-    }
 }
